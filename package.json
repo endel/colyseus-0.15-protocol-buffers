@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "name": "@myapp/monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "npm run compile-shared && concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm run compile-shared && npm start -w @myapp/client",
+    "server": "npm run compile-shared && npm start -w @myapp/server",
+    "compile-shared": "tsc -p packages/shared/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Endel Dreyer",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "typescript": "^4.5.5"
+  },
+  "engines": {
+    "node": ">= 16.14.0"
+  }
+}
