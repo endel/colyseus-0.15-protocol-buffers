@@ -8,6 +8,8 @@ This is a _monorepo_ demonstrating how to send and receive Protocol Buffers thro
 - [packages/client](packages/client): The JavaScript client, consumes shared package.
 - [packages/shared](packages/shared): The shared package, having `protobufjs` as dependency.
 
+Protocol Buffers is just an example of an arbitrary custom serializer/de-serializer you could use to exchange messages.
+
 ## Running locally
 
 Clone this project, and from the root folder, run:
