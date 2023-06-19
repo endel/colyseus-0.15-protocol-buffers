@@ -11,9 +11,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.3.2"
+    "parcel": "^2.9.2"
   },
   "dependencies": {
-    "colyseus.js": "^0.15.0-preview.3"
+    "colyseus.js": "^0.15.0"
   }
 }
